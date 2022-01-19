@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- TITLE -->
+      <section class="title">
+        Weather app <img src="./images/weatherlogo.png" alt="" />
+      </section>
+      <section class="bg"></section>
+      <!-- WEATHER AND COUNTRY -->
+      <section class="weather">
+        <!-- ERROR MESSAGE -->
+        <section class="errormsg"></section>
+        <!-- SEARCH -->
+        <section class="search_container">
+          <input id="search" type="text" placeholder="Search country" />
+          <button id="searchbtn" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </section>
+        <!-- HEADER -->
+        <section class="header">
+          <h1></h1>
+          <span></span>
+        </section>
+        <!-- WEATHER ICON -->
+        <section class="icon">
+          <img src="" alt="" />
+          <span></span>
+        </section>
+      </section>
+      <!-- TEMPERATURE AND WIND CONTAINER -->
+      <section class="temp_wind_container">
+        <!-- SEA LEVEL -->
+        <section class="sealevelcontainer">
+          <!-- SEA LEVEL ICON -->
+          <img src="./images/sea.png" alt="" />
+          <!-- SEA LEVEL DETAILS -->
+          <section class="seadetails">
+            <p class="sealevel"></p>
+          </section>
+        </section>
+        <!-- WIND -->
+        <section class="windtemperature">
+          <!-- WIND ICON -->
+          <img src="./images/wind.png" alt="" />
+          <!-- WIND DETAILS -->
+          <section class="winddetails">
+            <p class="degree"></p>
+            <p class="speed"></p>
+          </section>
+        </section>
+      </section>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
